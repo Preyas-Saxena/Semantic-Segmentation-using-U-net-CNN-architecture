@@ -4,7 +4,7 @@ from keras import optimizers
 import skimage.io as io
 import Data_Augmentation
 import Data_processing
-from Unet_Model import unet as seg # Importing the Unet model defined earlier
+from Unet_model import unet as seg # Importing the Unet model defined earlier
 from Loss_functions import dice_coef, dice_coef_loss
 
 #Generating the dataset from trainval files, and augmenting it
