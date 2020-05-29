@@ -1,3 +1,8 @@
+import numpy as np
+from skimage import io
+from skimage.transform import resize
+from skimage.color import rgb2gray
+
 voc_root_folder='C:/Users/Preyas/Desktop/Lectures/Lec_2nd_sem/CV/Project/VOCdevkit'
 image_size=128
 
