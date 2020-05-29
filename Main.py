@@ -9,7 +9,7 @@ from Loss_functions import dice_coef, dice_coef_loss
 
 #Generating the dataset from trainval files, and augmenting it
 total_x, total_y= Data_processing.build_seg_onemask_dataset('trainval.txt')
-aug_x, aug_y= Data_Augmentation.augment(total_x, total_y)
+train_x, train_y= Data_Augmentation.augment(total_x, total_y)
 
 #Training the model with binary cross entropy (or dice loss) for 5 epochs:
 adam = optimizers.Adam(lr=1e-4, beta_1=0.9, beta_2=0.999, epsilon=1e-08, decay=0.0)
