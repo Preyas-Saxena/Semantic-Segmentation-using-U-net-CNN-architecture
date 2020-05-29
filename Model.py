@@ -59,3 +59,4 @@ c9 = Dropout(0.1) (c9)
 c9 = Conv2D(16, (3, 3), activation='relu', kernel_initializer='he_normal', padding='same') (c9)
 
 outputs = Conv2D(1, (1, 1), activation='sigmoid') (c9)
+unet = Model(inputs=[inputs], outputs=[outputs])
