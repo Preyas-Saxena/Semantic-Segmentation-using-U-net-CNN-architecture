@@ -1,3 +1,6 @@
+from keras import backend as K
+import numpy as np
+
 def dice_coef(y_true, y_pred, smooth=1):
     """
     Dice = (2*|X & Y|)/ (|X|+ |Y|)
