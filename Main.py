@@ -2,6 +2,7 @@ import numpy as np
 from keras import optimizers
 import skimage.io as io
 from Custom_Model import unet as seg # Importing the Unet model defined earlier
+from Loss_functions import dice_coef, dice_coef_loss
 
 #Training the model with binary cross entropy (or dice loss) for 5 epochs:
 adam = optimizers.Adam(lr=1e-4, beta_1=0.9, beta_2=0.999, epsilon=1e-08, decay=0.0)
